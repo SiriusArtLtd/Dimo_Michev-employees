@@ -12,7 +12,7 @@ namespace SirmaProject
     public partial class Form1 : Form
     {
         private OpenFileDialog openFileDialog1;
-        private BindingSource bindingSource1 = new BindingSource();
+  
 
 
         public Form1()
@@ -108,8 +108,7 @@ namespace SirmaProject
                 dt.Columns[2].ColumnName = "Project ID";
                 dt.Columns[3].ColumnName = " Days worked";
 
-                bindingSource1.DataSource = dt;
-                dataGridView1.DataSource = bindingSource1;
+                dataGridView1.DataSource = dt;
                 dataGridView1.AutoResizeColumns(
                   DataGridViewAutoSizeColumnsMode.AllCells);
             }
